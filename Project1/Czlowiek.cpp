@@ -24,6 +24,7 @@ string Czlowiek::daj_imie_i_nazwisko()
 
 bool Czlowiek::czy_pierwsza(int n)
 {
+	cout << "Uruchomiono funkcje testujaca czy liczba jest pierwsza" << endl;
 	if (n == 1)
 		return false;
 	for (int i = 2; i < n; i++)
