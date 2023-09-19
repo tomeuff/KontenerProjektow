@@ -32,5 +32,17 @@ namespace UnitTest1
 				Assert::AreEqual(Czlowiek::czy_pierwsza(p), bool(d));
 			}
 		}
+
+		TEST_METHOD(TestMethod3)
+		{
+			cout << "Metoda testowa nr 3" << endl;
+			fstream plik("C:\\Users\\Admin\\Desktop\\dane.txt");
+			int p, d;
+			while (!plik.eof())
+			{
+				plik >> p >> d;
+				Assert::AreEqual(Czlowiek::czy_pierwsza(p), bool(d));
+			}
+		}
 	};
 }
