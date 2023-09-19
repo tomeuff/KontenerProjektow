@@ -15,6 +15,7 @@ namespace UnitTest1
 		
 		TEST_METHOD(TestMethod1)
 		{
+			cout << "Metoda testowa nr 1" << endl;
 			string dane = "Jan Kowal";
 			Czlowiek c1("Jan", "Kowal", 67);
 			Assert::AreEqual(dane, c1.daj_imie_i_nazwisko());
@@ -22,6 +23,7 @@ namespace UnitTest1
 
 		TEST_METHOD(TestMethod2)
 		{
+			cout << "Metoda testowa nr 2" << endl;
 			fstream plik("C:\\Users\\Admin\\Desktop\\dane.txt");
 			int p, d;
 			while (!plik.eof())
